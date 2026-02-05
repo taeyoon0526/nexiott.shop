@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <!-- Meta Tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#5d6dff" />
+
+  <!-- SEO -->
+  <title>개인정보 보호 정책 - Nexi SHOP</title>
+  <meta name="description" content="Nexi SHOP의 개인정보 보호 정책 및 데이터 처리 방침을 확인하세요." />
+  <meta name="robots" content="noindex, nofollow" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/img/Nexi.png" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../styles.css" />
+
+  <style>
+    .privacy-container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 120px 24px 80px;
+    }
+
+    .privacy-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .privacy-header h1 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      margin-bottom: 16px;
+      background: linear-gradient(135deg, var(--text) 0%, var(--text-secondary) 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .privacy-header .meta {
+      color: var(--muted);
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .privacy-content {
+      background: var(--card-bg);
+      border-radius: 24px;
+      padding: 48px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+    }
+
+    .privacy-section {
+      margin-bottom: 48px;
+    }
+
+    .privacy-section:last-child {
+      margin-bottom: 0;
+    }
+
+    .privacy-section h2 {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--text);
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--accent);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .privacy-section h3 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--text);
+      margin: 24px 0 16px;
+    }
+
+    .privacy-section p {
+      color: var(--text-secondary);
+      line-height: 1.8;
+      margin-bottom: 16px;
+    }
+
+    .privacy-section ul,
+    .privacy-section ol {
+      margin: 16px 0;
+      padding-left: 24px;
+    }
+
+    .privacy-section li {
+      color: var(--text-secondary);
+      line-height: 1.8;
+      margin-bottom: 12px;
+    }
+
+    .privacy-section strong {
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    .info-box {
+      background: linear-gradient(135deg,
+          color-mix(in srgb, var(--accent) 10%, transparent),
+          color-mix(in srgb, var(--accent) 5%, transparent));
+      border-left: 4px solid var(--accent);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin: 24px 0;
+    }
+
+    .info-box p {
+      margin-bottom: 0;
+    }
+
+    .warning-box {
+      background: linear-gradient(135deg,
+          color-mix(in srgb, #ff6b6b 10%, transparent),
+          color-mix(in srgb, #ff6b6b 5%, transparent));
+      border-left: 4px solid #ff6b6b;
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin: 24px 0;
+    }
+
+    .contact-info {
+      background: var(--bg);
+      border-radius: 16px;
+      padding: 24px;
+      margin-top: 32px;
+    }
+
+    .contact-info h4 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 12px;
+    }
+
+    .contact-info p {
+      margin-bottom: 8px;
+    }
+
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--accent);
+      font-weight: 600;
+      transition: var(--transition);
+      margin-top: 40px;
+    }
+
+    .back-btn:hover {
+      transform: translateX(-4px);
+      color: var(--accent-2);
+    }
+
+    @media (max-width: 768px) {
+      .privacy-content {
+        padding: 32px 24px;
+      }
+
+      .privacy-section h2 {
+        font-size: 1.4rem;
+      }
+
+      .privacy-section h3 {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="/" aria-label="Nexi SHOP 홈">
+        <img src="/img/Nexi.png" alt="Nexi Logo" class="brand-logo" />
+        <span class="brand-mark">Nexi SHOP</span>
+      </a>
+      <nav class="header-actions" aria-label="주요 메뉴">
+        <a class="btn ghost" href="/tos">이용약관</a>
+        <a class="btn" href="/">홈으로</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="privacy-container">
+      <div class="privacy-header">
+        <h1>🔒 개인정보 보호 정책</h1>
+        <div class="meta">
+          <span>📅 최종 업데이트: 2026년 2월 5일</span>
+          <span>⏱️ 시행일: 2026년 2월 5일</span>
+        </div>
+      </div>
+
+      <div class="privacy-content">
+        <!-- 1. 총칙 -->
+        <section class="privacy-section">
+          <h2>📋 1. 총칙</h2>
+          <p>
+            Nexi SHOP(이하 "회사")은 이용자의 개인정보를 중요시하며, 「개인정보 보호법」, 「정보통신망 이용촉진 및 정보보호 등에 관한 법률」 등 관련 법령을 준수하고 있습니다.
+          </p>
+          <p>
+            회사는 본 개인정보 보호 정책을 통해 이용자가 제공하는 개인정보가 어떠한 용도와 방식으로 이용되고 있으며, 개인정보 보호를 위해 어떠한 조치가 취해지고 있는지 알려드립니다.
+          </p>
+
+          <div class="info-box">
+            <p><strong>🎓 교육용 목적 안내:</strong> 본 웹사이트는 교육 및 포트폴리오 목적으로 제작되었으며, 실제 상업적 거래는 이루어지지 않습니다. 표시된 브랜드 로고 및 상표는 교육 목적으로만 사용되었습니다.</p>
+          </div>
+        </section>
+
+        <!-- 2. 수집하는 개인정보 항목 -->
+        <section class="privacy-section">
+          <h2>📝 2. 수집하는 개인정보 항목</h2>
+
+          <h3>2.1 필수 수집 항목</h3>
+          <p>회사는 서비스 제공을 위해 다음과 같은 최소한의 개인정보를 수집합니다:</p>
+          <ul>
+            <li><strong>Discord 사용자 정보:</strong> Discord ID, 사용자명, 이메일 주소 (Discord OAuth 인증 시)</li>
+            <li><strong>서비스 이용 정보:</strong> 접속 로그, 쿠키, 접속 IP 정보, 서비스 이용 기록</li>
+            <li><strong>기기 정보:</strong> OS 종류, 브라우저 정보, 화면 크기</li>
+          </ul>
+
+          <h3>2.2 선택 수집 항목</h3>
+          <p>다음 정보는 이용자의 선택에 따라 수집될 수 있습니다:</p>
+          <ul>
+            <li><strong>고객 문의 시:</strong> 문의 내용, 연락처 정보</li>
+            <li><strong>이벤트 참여 시:</strong> 이벤트 참여 기록, 당첨자 정보</li>
+          </ul>
+
+          <h3>2.3 자동 수집 항목</h3>
+          <p>서비스 이용 과정에서 다음 정보가 자동으로 생성되어 수집될 수 있습니다:</p>
+          <ul>
+            <li>쿠키(Cookie) 및 세션 정보</li>
+            <li>접속 로그 (IP 주소, 접속 시간, 이용 기록)</li>
+            <li>광고 식별자 (선택적)</li>
+          </ul>
+        </section>
+
+        <!-- 3. 개인정보의 수집 및 이용 목적 -->
+        <section class="privacy-section">
+          <h2>🎯 3. 개인정보의 수집 및 이용 목적</h2>
+          <p>회사는 수집한 개인정보를 다음의 목적으로만 이용합니다:</p>
+
+          <h3>3.1 서비스 제공</h3>
+          <ul>
+            <li>Discord 커뮤니티 회원 식별 및 관리</li>
+            <li>상품 안내 및 구매 상담 서비스 제공</li>
+            <li>고객 문의 대응 및 불만 처리</li>
+            <li>공지사항 전달 및 이벤트 운영</li>
+          </ul>
+
+          <h3>3.2 서비스 개선</h3>
+          <ul>
+            <li>서비스 이용 통계 분석 및 개선</li>
+            <li>신규 서비스 개발 및 맞춤형 서비스 제공</li>
+            <li>접속 빈도 파악 및 회원의 서비스 이용 패턴 분석</li>
+          </ul>
+
+          <h3>3.3 마케팅 및 광고</h3>
+          <ul>
+            <li>이벤트 및 프로모션 정보 제공 (선택 동의 시)</li>
+            <li>맞춤형 광고 제공 (선택 동의 시)</li>
+          </ul>
+        </section>
+
+        <!-- 4. 개인정보의 보유 및 이용 기간 -->
+        <section class="privacy-section">
+          <h2>⏰ 4. 개인정보의 보유 및 이용 기간</h2>
+          <p>회사는 법령에 따른 개인정보 보유·이용기간 또는 이용자로부터 개인정보 수집 시 동의받은 보유·이용기간 내에서 개인정보를 처리·보유합니다.</p>
+
+          <h3>4.1 일반 회원 정보</h3>
+          <ul>
+            <li><strong>보유 기간:</strong> 서비스 탈퇴 시까지</li>
+            <li><strong>파기 시점:</strong> 회원 탈퇴 요청 후 즉시 (단, 법령에 의해 보존 필요 시 예외)</li>
+          </ul>
+
+          <h3>4.2 법령에 의한 보존</h3>
+          <p>관계 법령에 따라 보존해야 하는 경우 다음과 같이 보관합니다:</p>
+          <ul>
+            <li><strong>계약 또는 청약철회 기록:</strong> 5년 (전자상거래법)</li>
+            <li><strong>대금결제 및 재화 공급 기록:</strong> 5년 (전자상거래법)</li>
+            <li><strong>소비자 불만 또는 분쟁처리 기록:</strong> 3년 (전자상거래법)</li>
+            <li><strong>표시·광고 관련 기록:</strong> 6개월 (전자상거래법)</li>
+            <li><strong>웹사이트 방문 기록:</strong> 3개월 (통신비밀보호법)</li>
+          </ul>
+        </section>
+
+        <!-- 5. 개인정보의 제3자 제공 -->
+        <section class="privacy-section">
+          <h2>🤝 5. 개인정보의 제3자 제공</h2>
+          <p>회사는 원칙적으로 이용자의 개인정보를 제3자에게 제공하지 않습니다. 다만, 다음의 경우는 예외로 합니다:</p>
+
+          <ul>
+            <li>이용자가 사전에 동의한 경우</li>
+            <li>법령의 규정에 의거하거나, 수사 목적으로 법령에 정해진 절차와 방법에 따라 수사기관의 요구가 있는 경우</li>
+            <li>통계작성, 학술연구, 시장조사를 위하여 특정 개인을 식별할 수 없는 형태로 제공하는 경우</li>
+          </ul>
+
+          <div class="warning-box">
+            <p><strong>⚠️ 중요:</strong> 회사는 이용자의 개인정보를 제3자에게 제공하거나 공유하지 않으며, 외부 업체에 개인정보 처리를 위탁하지 않습니다.</p>
+          </div>
+        </section>
+
+        <!-- 6. 개인정보 처리의 위탁 -->
+        <section class="privacy-section">
+          <h2>🔄 6. 개인정보 처리의 위탁</h2>
+          <p>회사는 현재 개인정보 처리 업무를 외부에 위탁하고 있지 않습니다.</p>
+          <p>향후 서비스 향상을 위해 개인정보 처리를 위탁하게 되는 경우, 관계 법령에 따라 위탁계약 시 개인정보가 안전하게 관리될 수 있도록 필요한 사항을 규정하고, 위탁받는 업체명과 업무 내용을 공개하도록 하겠습니다.</p>
+        </section>
+
+        <!-- 7. 이용자의 권리와 행사 방법 -->
+        <section class="privacy-section">
+          <h2>👤 7. 이용자의 권리와 행사 방법</h2>
+          <p>이용자는 언제든지 다음과 같은 권리를 행사할 수 있습니다:</p>
+
+          <h3>7.1 개인정보 열람 요구권</h3>
+          <p>자신의 개인정보에 대한 열람을 요구할 수 있습니다.</p>
+
+          <h3>7.2 개인정보 정정 요구권</h3>
+          <p>잘못된 개인정보에 대한 정정을 요구할 수 있습니다.</p>
+
+          <h3>7.3 개인정보 삭제 요구권</h3>
+          <p>개인정보의 수집·이용·제공 등에 대한 동의를 철회하거나 삭제를 요구할 수 있습니다.</p>
+
+          <h3>7.4 개인정보 처리정지 요구권</h3>
+          <p>개인정보의 처리 정지를 요구할 수 있습니다.</p>
+
+          <div class="info-box">
+            <p><strong>💡 권리 행사 방법:</strong> Discord 서버 내 고객센터 채널을 통해 요청하거나, 본 페이지 하단의 연락처로 문의하시면 지체 없이 조치하겠습니다.</p>
+          </div>
+        </section>
+
+        <!-- 8. 개인정보의 파기 절차 및 방법 -->
+        <section class="privacy-section">
+          <h2>🗑️ 8. 개인정보의 파기 절차 및 방법</h2>
+
+          <h3>8.1 파기 절차</h3>
+          <p>이용자가 서비스 가입 등을 위해 제공한 정보는 목적이 달성된 후 별도의 DB로 옮겨져 내부 방침 및 기타 관련 법령에 의한 정보보호 사유에 따라 일정 기간 저장된 후 파기됩니다.</p>
+
+          <h3>8.2 파기 방법</h3>
+          <ul>
+            <li><strong>전자적 파일:</strong> 복구 및 재생이 되지 않도록 기술적 방법을 이용하여 완전하게 삭제</li>
+            <li><strong>종이 문서:</strong> 분쇄기로 분쇄하거나 소각</li>
+          </ul>
+        </section>
+
+        <!-- 9. 개인정보 보호를 위한 기술적·관리적 조치 -->
+        <section class="privacy-section">
+          <h2>🛡️ 9. 개인정보 보호를 위한 기술적·관리적 조치</h2>
+
+          <h3>9.1 기술적 조치</h3>
+          <ul>
+            <li><strong>암호화:</strong> 이용자의 개인정보는 암호화되어 저장 및 관리</li>
+            <li><strong>보안 프로그램:</strong> 해킹이나 컴퓨터 바이러스 등에 의해 개인정보가 유출되거나 훼손되는 것을 막기 위해 보안 프로그램 설치 및 주기적 업데이트</li>
+            <li><strong>네트워크 보안:</strong> 접근 통제 시스템을 이용하여 외부로부터의 무단 접근 통제</li>
+            <li><strong>HTTPS 적용:</strong> 웹사이트 전체에 SSL/TLS 암호화 통신 적용</li>
+          </ul>
+
+          <h3>9.2 관리적 조치</h3>
+          <ul>
+            <li><strong>접근 권한 관리:</strong> 개인정보에 대한 접근 권한을 최소한의 인원으로 제한</li>
+            <li><strong>직원 교육:</strong> 개인정보 보호 관련 법령 및 내부 규정 교육 실시</li>
+            <li><strong>개인정보 보호책임자 지정:</strong> 개인정보 처리 및 보호 관련 업무 총괄 책임자 지정</li>
+          </ul>
+        </section>
+
+        <!-- 10. 쿠키(Cookie)의 운영 및 거부 -->
+        <section class="privacy-section">
+          <h2>🍪 10. 쿠키(Cookie)의 운영 및 거부</h2>
+
+          <h3>10.1 쿠키란?</h3>
+          <p>쿠키는 웹사이트를 운영하는데 이용되는 서버가 이용자의 브라우저에 보내는 아주 작은 텍스트 파일로, 이용자의 컴퓨터에 저장됩니다.</p>
+
+          <h3>10.2 쿠키 사용 목적</h3>
+          <ul>
+            <li>이용자의 서비스 이용 패턴 분석</li>
+            <li>맞춤형 서비스 제공</li>
+            <li>웹사이트 방문 및 이용 형태 파악</li>
+            <li>보안 접속 여부 확인</li>
+          </ul>
+
+          <h3>10.3 쿠키 거부 방법</h3>
+          <p>이용자는 쿠키 설치에 대한 선택권을 가지고 있습니다:</p>
+          <ul>
+            <li><strong>Chrome:</strong> 설정 → 개인정보 및 보안 → 쿠키 및 기타 사이트 데이터</li>
+            <li><strong>Firefox:</strong> 설정 → 개인정보 및 보안 → 쿠키 및 사이트 데이터</li>
+            <li><strong>Safari:</strong> 환경설정 → 개인정보 보호 → 쿠키 및 웹사이트 데이터</li>
+            <li><strong>Edge:</strong> 설정 → 쿠키 및 사이트 권한 → 쿠키 및 사이트 데이터 관리</li>
+          </ul>
+
+          <div class="info-box">
+            <p><strong>💡 안내:</strong> 쿠키 저장을 거부할 경우 맞춤형 서비스 이용에 어려움이 발생할 수 있습니다.</p>
+          </div>
+        </section>
+
+        <!-- 11. 개인정보 보호책임자 -->
+        <section class="privacy-section">
+          <h2>👨‍💼 11. 개인정보 보호책임자</h2>
+          <p>회사는 이용자의 개인정보를 보호하고 개인정보와 관련된 불만을 처리하기 위하여 개인정보 보호책임자를 지정하고 있습니다.</p>
+
+          <div class="contact-info">
+            <h4>📧 개인정보 보호책임자</h4>
+            <p><strong>담당 부서:</strong> Nexi SHOP 운영팀</p>
+            <p><strong>연락처:</strong> Discord 서버 내 고객센터 채널</p>
+            <p><strong>Discord 서버:</strong> <a href="https://discord.gg/nexiott" style="color: var(--accent);">discord.gg/nexiott</a></p>
+            <p><strong>응대 시간:</strong> 연중무휴 24시간 (답변은 순차적으로 처리됩니다)</p>
+          </div>
+
+          <p style="margin-top: 20px;">개인정보 침해로 인한 신고나 상담이 필요하신 경우에는 아래 기관에 문의하실 수 있습니다:</p>
+          <ul>
+            <li><strong>개인정보 침해신고센터:</strong> privacy.kisa.or.kr / 국번없이 118</li>
+            <li><strong>개인정보 분쟁조정위원회:</strong> kopico.go.kr / 1833-6972</li>
+            <li><strong>대검찰청 사이버범죄수사단:</strong> spo.go.kr / 국번없이 1301</li>
+            <li><strong>경찰청 사이버안전국:</strong> cyberbureau.police.go.kr / 국번없이 182</li>
+          </ul>
+        </section>
+
+        <!-- 12. 아동의 개인정보 보호 -->
+        <section class="privacy-section">
+          <h2>👶 12. 아동의 개인정보 보호</h2>
+          <p>회사는 만 14세 미만 아동의 개인정보를 수집하지 않습니다.</p>
+          <p>Discord 플랫폼 정책에 따라 만 13세 이상만 서비스를 이용할 수 있으며, 회사는 이를 준수합니다.</p>
+        </section>
+
+        <!-- 13. 링크 사이트에 대한 책임 -->
+        <section class="privacy-section">
+          <h2>🔗 13. 링크 사이트에 대한 책임</h2>
+          <p>회사는 이용자에게 다른 외부 사이트로 연결되는 링크를 제공할 수 있습니다. 이 경우 회사는 외부 사이트에서 이루어지는 개인정보 수집에 대해 어떠한 책임도 지지 않습니다.</p>
+          <p>외부 사이트의 개인정보 보호 정책은 해당 사이트에서 별도로 확인하시기 바랍니다.</p>
+        </section>
+
+        <!-- 14. 개인정보 처리방침 변경 -->
+        <section class="privacy-section">
+          <h2>📢 14. 개인정보 처리방침 변경</h2>
+          <p>본 개인정보 처리방침은 법령, 정책 또는 보안기술의 변경에 따라 내용의 추가, 삭제 및 수정이 있을 시에는 변경되는 개인정보 처리방침을 시행하기 최소 7일 전에 웹사이트를 통해 변경 이유 및 내용 등을 공지하도록 하겠습니다.</p>
+          <p>중대한 변경이 있을 경우에는 30일 전에 공지하며, 필요 시 이용자의 동의를 다시 받을 수 있습니다.</p>
+        </section>
+
+        <!-- 부칙 -->
+        <section class="privacy-section">
+          <h2>📅 부칙</h2>
+          <ul>
+            <li><strong>공고일자:</strong> 2026년 2월 5일</li>
+            <li><strong>시행일자:</strong> 2026년 2월 5일</li>
+          </ul>
+          <p style="margin-top: 20px;">본 개인정보 처리방침은 시행일로부터 적용되며, 법령 및 방침에 따른 변경내용의 추가, 삭제 및 정정이 있는 경우에는 변경사항의 시행 7일 전부터 공지사항을 통하여 고지할 것입니다.</p>
+        </section>
+
+        <a href="/" class="back-btn">← 홈으로 돌아가기</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p class="footer-copy">© 2024-2026 Nexi SHOP. All rights reserved. For educational purposes only.</p>
+      <nav class="footer-links" aria-label="푸터 메뉴">
+        <a href="/tos">이용약관</a>
+        <a href="/privacy">개인정보 보호 정책</a>
+        <a href="/faq">FAQ</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+
+</html>

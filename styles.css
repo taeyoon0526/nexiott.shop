@@ -508,6 +508,41 @@ a {
   filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.3));
 }
 
+.brand-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  padding: 16px;
+  border-radius: 16px;
+  background: linear-gradient(135deg,
+      rgba(255, 255, 255, 0.05) 0%,
+      rgba(255, 255, 255, 0.02) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  transition: var(--transition);
+}
+
+.brand-icon-svg {
+  width: 48px;
+  height: 48px;
+  transition: var(--transition);
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
+}
+
+.product-card:hover .brand-icon-wrapper {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg,
+      rgba(255, 255, 255, 0.08) 0%,
+      rgba(255, 255, 255, 0.04) 100%);
+}
+
+.product-card:hover .brand-icon-svg {
+  transform: scale(1.1);
+}
+
 .brand-icon {
   --brand-color: var(--accent);
   font-size: 1.5rem;
@@ -516,9 +551,9 @@ a {
   color: var(--brand-color);
   padding: 12px 18px;
   border-radius: 12px;
-  background: linear-gradient(135deg, 
-    color-mix(in srgb, var(--brand-color) 15%, transparent) 0%, 
-    color-mix(in srgb, var(--brand-color) 5%, transparent) 100%);
+  background: linear-gradient(135deg,
+      color-mix(in srgb, var(--brand-color) 15%, transparent) 0%,
+      color-mix(in srgb, var(--brand-color) 5%, transparent) 100%);
   border: 2px solid color-mix(in srgb, var(--brand-color) 25%, transparent);
   box-shadow: 0 4px 12px color-mix(in srgb, var(--brand-color) 20%, transparent);
   transition: var(--transition);
@@ -959,6 +994,17 @@ a {
   .brand-logo {
     width: 28px;
     height: 28px;
+  }
+
+  .brand-icon-wrapper {
+    width: 64px;
+    height: 64px;
+    padding: 12px;
+  }
+
+  .brand-icon-svg {
+    width: 40px;
+    height: 40px;
   }
 
   .brand-icon {

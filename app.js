@@ -24,7 +24,7 @@ const PRODUCTS = [
     price: "₩500",
     desc: "로그인 보증 · 이메일/비번 제공 · 쿠키 지급 · 불량 시 구매 후 1시간 내 교환",
     tag: "HOT",
-    icon: "NETFLIX",
+    iconSvg: "netflix",
     iconColor: "#E50914",
     category: "streaming"
   },
@@ -33,7 +33,7 @@ const PRODUCTS = [
     price: "₩500",
     desc: "랜덤계정 · 로그인 보증 · 불량 시 구매 후 5분 내 교환",
     tag: "NEW",
-    icon: "Disney+",
+    iconSvg: "disneyplus",
     iconColor: "#113CCF",
     category: "streaming"
   },
@@ -42,7 +42,7 @@ const PRODUCTS = [
     price: "₩400",
     desc: "무제한 · 로그인 보증 · 불량 시 구매 후 59분 내 교환",
     tag: "NEW",
-    icon: "CR",
+    iconSvg: "crunchyroll",
     iconColor: "#F47521",
     category: "streaming"
   },
@@ -51,7 +51,7 @@ const PRODUCTS = [
     price: "₩300",
     desc: "로그인 보증 · 이메일/비번 제공 · 불량 시 구매 후 1일 내 교환",
     tag: "HOT",
-    icon: "duo",
+    iconSvg: "duolingo",
     iconColor: "#58CC02",
     category: "education"
   },
@@ -60,7 +60,7 @@ const PRODUCTS = [
     price: "₩50",
     desc: "랜덤계정 · 보증 2개당 1개",
     tag: "SALE",
-    icon: "STEAM",
+    iconSvg: "steam",
     iconColor: "#171A21",
     category: "gaming"
   },
@@ -69,7 +69,7 @@ const PRODUCTS = [
     price: "₩2,300",
     desc: "계정 지급 · 로그인 보증 · 불량 시 구매 후 1일 내 교환",
     tag: "SAFE",
-    icon: "Nord",
+    iconSvg: "nordvpn",
     iconColor: "#4687FF",
     category: "security"
   },
@@ -78,7 +78,7 @@ const PRODUCTS = [
     price: "₩3,000",
     desc: "프리미엄 개인계정 3개월 · 로그인 보증 · 불량 시 구매 후 30일 내 교환",
     tag: "BEST",
-    icon: "Spotify",
+    iconSvg: "spotify",
     iconColor: "#1DB954",
     category: "music"
   },
@@ -87,7 +87,7 @@ const PRODUCTS = [
     price: "₩4,000",
     desc: "계정 1개월 · 2주 보증 · 개인계정에 적용",
     tag: "BEST",
-    icon: "YouTube",
+    iconSvg: "youtube",
     iconColor: "#FF0000",
     category: "streaming"
   },
@@ -96,7 +96,7 @@ const PRODUCTS = [
     price: "₩40",
     desc: "계정번호/아이디/비밀번호/쿠키 · 로그인 보증 · 구매 후 1일 내 교환",
     tag: "NEW",
-    icon: "ROBLOX",
+    iconSvg: "roblox",
     iconColor: "#000000",
     category: "gaming"
   },
@@ -105,7 +105,7 @@ const PRODUCTS = [
     price: "₩1,200",
     desc: "계정 아이디/비번 지급 · 로그인 보증 · 구매 후 3일 내 교환",
     tag: "NEW",
-    icon: "CapCut",
+    iconSvg: "capcut",
     iconColor: "#000000",
     category: "creative"
   },
@@ -114,7 +114,7 @@ const PRODUCTS = [
     price: "₩100/일 · ₩3,000/30일 · ₩10,000/영구",
     desc: "Windows PC 전용 · GUI 기반 자동 메시지 전송 매크로",
     tag: "TOOL",
-    icon: "KakaoTalk",
+    iconSvg: "kakaotalk",
     iconColor: "#FFE812",
     category: "tools"
   },
@@ -123,8 +123,8 @@ const PRODUCTS = [
     price: "₩4,900",
     desc: "계정 지급 · 로그인 보증 + 프로 적용 보증 · 3일 보증",
     tag: "NEW",
-    icon: "Gemini",
-    iconColor: "#886FBF",
+    iconSvg: "googlegemini",
+    iconColor: "#8E75B2",
     category: "ai"
   },
   {
@@ -132,8 +132,8 @@ const PRODUCTS = [
     price: "₩3,900",
     desc: "계정 지급 · 로그인 보증 + Plus 적용 보증 · 구매 후 3일 보증",
     tag: "BEST",
-    icon: "GPT",
-    iconColor: "#10A37F",
+    iconSvg: "openai",
+    iconColor: "#412991",
     category: "ai"
   },
   {
@@ -141,8 +141,8 @@ const PRODUCTS = [
     price: "₩500 ~ ₩700 / 1회",
     desc: "SMS 수신 전용 · 20분 사용 후 만료 · 불량 교환/환불 불가",
     tag: "INFO",
-    icon: "SMS",
-    iconColor: "#5d6dff",
+    iconSvg: "discord",
+    iconColor: "#5865F2",
     category: "utility"
   },
   {
@@ -150,7 +150,7 @@ const PRODUCTS = [
     price: "₩500",
     desc: "계정 지급 · 로그인 보증 · 불량 시 구매 후 1일 내 교환",
     tag: "SAFE",
-    icon: "Express",
+    iconSvg: "expressvpn",
     iconColor: "#DA3940",
     category: "security"
   },
@@ -222,7 +222,7 @@ class ProductManager {
 
     const elements = {
       tag: this.createElement('span', 'tag', product.tag || 'INFO'),
-      icon: this.createBrandIcon(product.icon, product.iconColor),
+      icon: this.createBrandIcon(product.iconSvg, product.iconColor),
       title: this.createElement('h3', '', product.name),
       price: this.createElement('div', 'price', product.price),
       desc: this.createElement('p', 'desc', product.desc),
@@ -233,14 +233,47 @@ class ProductManager {
     return card;
   }
 
-  createBrandIcon(iconText, iconColor) {
-    const icon = document.createElement('div');
-    icon.className = 'brand-icon';
-    icon.textContent = iconText;
+  createBrandIcon(iconName, iconColor) {
+    const iconWrapper = document.createElement('div');
+    iconWrapper.className = 'brand-icon-wrapper';
+    
+    // Simple Icons CDN을 사용하여 SVG 아이콘 로드
+    const icon = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    icon.classList.add('brand-icon-svg');
+    icon.setAttribute('role', 'img');
+    icon.setAttribute('viewBox', '0 0 24 24');
+    icon.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+    
     if (iconColor) {
-      icon.style.setProperty('--brand-color', iconColor);
+      icon.style.fill = iconColor;
     }
-    return icon;
+    
+    // Simple Icons에서 SVG path 데이터 로드 (비동기)
+    this.loadIconPath(icon, iconName);
+    
+    iconWrapper.appendChild(icon);
+    return iconWrapper;
+  }
+
+  async loadIconPath(svgElement, iconName) {
+    try {
+      const response = await fetch(`https://cdn.simpleicons.org/${iconName}`);
+      const svgText = await response.text();
+      
+      // SVG 텍스트에서 path 추출
+      const parser = new DOMParser();
+      const svgDoc = parser.parseFromString(svgText, 'image/svg+xml');
+      const path = svgDoc.querySelector('path');
+      
+      if (path) {
+        const pathClone = path.cloneNode(true);
+        svgElement.appendChild(pathClone);
+      }
+    } catch (error) {
+      console.warn(`Failed to load icon: ${iconName}`, error);
+      // 로드 실패 시 대체 아이콘 표시
+      svgElement.innerHTML = '<circle cx="12" cy="12" r="10" opacity="0.3"/>';
+    }
   }
 
   createElement(tag, className, textContent) {
