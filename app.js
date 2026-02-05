@@ -33,8 +33,8 @@ const PRODUCTS = [
     price: "₩500",
     desc: "랜덤계정 · 로그인 보증 · 불량 시 구매 후 5분 내 교환",
     tag: "NEW",
-    iconSvg: "disneyplus",
-    iconColor: "#113CCF",
+    iconSvg: "disney",
+    iconColor: "#0063e5",
     category: "streaming"
   },
   {
@@ -61,7 +61,7 @@ const PRODUCTS = [
     desc: "랜덤계정 · 보증 2개당 1개",
     tag: "SALE",
     iconSvg: "steam",
-    iconColor: "#171A21",
+    iconColor: "#00adee",
     category: "gaming"
   },
   {
@@ -97,7 +97,7 @@ const PRODUCTS = [
     desc: "계정번호/아이디/비밀번호/쿠키 · 로그인 보증 · 구매 후 1일 내 교환",
     tag: "NEW",
     iconSvg: "roblox",
-    iconColor: "#000000",
+    iconColor: "#0057FF",
     category: "gaming"
   },
   {
@@ -105,7 +105,7 @@ const PRODUCTS = [
     price: "₩1,200",
     desc: "계정 아이디/비번 지급 · 로그인 보증 · 구매 후 3일 내 교환",
     tag: "NEW",
-    iconSvg: "capcut",
+    iconSvg: "tiktok",
     iconColor: "#000000",
     category: "creative"
   },
@@ -123,8 +123,8 @@ const PRODUCTS = [
     price: "₩4,900",
     desc: "계정 지급 · 로그인 보증 + 프로 적용 보증 · 3일 보증",
     tag: "NEW",
-    iconSvg: "googlegemini",
-    iconColor: "#8E75B2",
+    iconSvg: "google",
+    iconColor: "#4285F4",
     category: "ai"
   },
   {
@@ -133,7 +133,7 @@ const PRODUCTS = [
     desc: "계정 지급 · 로그인 보증 + Plus 적용 보증 · 구매 후 3일 보증",
     tag: "BEST",
     iconSvg: "openai",
-    iconColor: "#412991",
+    iconColor: "#10a37f",
     category: "ai"
   },
   {
