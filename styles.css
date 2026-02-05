@@ -129,10 +129,21 @@ a {
   letter-spacing: -0.02em;
   font-size: 1.15rem;
   transition: var(--transition);
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .brand:hover {
   transform: translateY(-1px);
+}
+
+.brand-logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: var(--shadow);
 }
 
 .brand-mark {
@@ -285,6 +296,17 @@ a {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.discord-icon {
+  width: 48px;
+  height: 48px;
+  color: var(--accent);
+  filter: drop-shadow(0 4px 12px var(--accent-glow));
+  flex-shrink: 0;
 }
 
 .eyebrow {
@@ -484,6 +506,33 @@ a {
 .product-card .icon {
   font-size: 2.4rem;
   filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.3));
+}
+
+.brand-icon {
+  --brand-color: var(--accent);
+  font-size: 1.5rem;
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  color: var(--brand-color);
+  padding: 12px 18px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, 
+    color-mix(in srgb, var(--brand-color) 15%, transparent) 0%, 
+    color-mix(in srgb, var(--brand-color) 5%, transparent) 100%);
+  border: 2px solid color-mix(in srgb, var(--brand-color) 25%, transparent);
+  box-shadow: 0 4px 12px color-mix(in srgb, var(--brand-color) 20%, transparent);
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 80px;
+  text-align: center;
+  text-shadow: 0 2px 8px color-mix(in srgb, var(--brand-color) 40%, transparent);
+}
+
+.product-card:hover .brand-icon {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 8px 20px color-mix(in srgb, var(--brand-color) 30%, transparent);
 }
 
 .product-card .price {
@@ -898,6 +947,24 @@ a {
 
   .hero-copy h1 {
     font-size: 2.2rem;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .discord-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .brand-logo {
+    width: 28px;
+    height: 28px;
+  }
+
+  .brand-icon {
+    font-size: 1.2rem;
+    padding: 10px 14px;
+    min-width: 70px;
   }
 
   .section {

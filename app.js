@@ -24,7 +24,8 @@ const PRODUCTS = [
     price: "₩500",
     desc: "로그인 보증 · 이메일/비번 제공 · 쿠키 지급 · 불량 시 구매 후 1시간 내 교환",
     tag: "HOT",
-    icon: "🎬",
+    icon: "NETFLIX",
+    iconColor: "#E50914",
     category: "streaming"
   },
   {
@@ -32,7 +33,8 @@ const PRODUCTS = [
     price: "₩500",
     desc: "랜덤계정 · 로그인 보증 · 불량 시 구매 후 5분 내 교환",
     tag: "NEW",
-    icon: "🏰",
+    icon: "Disney+",
+    iconColor: "#113CCF",
     category: "streaming"
   },
   {
@@ -40,7 +42,8 @@ const PRODUCTS = [
     price: "₩400",
     desc: "무제한 · 로그인 보증 · 불량 시 구매 후 59분 내 교환",
     tag: "NEW",
-    icon: "🍿",
+    icon: "CR",
+    iconColor: "#F47521",
     category: "streaming"
   },
   {
@@ -48,7 +51,8 @@ const PRODUCTS = [
     price: "₩300",
     desc: "로그인 보증 · 이메일/비번 제공 · 불량 시 구매 후 1일 내 교환",
     tag: "HOT",
-    icon: "🦉",
+    icon: "duo",
+    iconColor: "#58CC02",
     category: "education"
   },
   {
@@ -56,7 +60,8 @@ const PRODUCTS = [
     price: "₩50",
     desc: "랜덤계정 · 보증 2개당 1개",
     tag: "SALE",
-    icon: "🕹️",
+    icon: "STEAM",
+    iconColor: "#171A21",
     category: "gaming"
   },
   {
@@ -64,7 +69,8 @@ const PRODUCTS = [
     price: "₩2,300",
     desc: "계정 지급 · 로그인 보증 · 불량 시 구매 후 1일 내 교환",
     tag: "SAFE",
-    icon: "🛡️",
+    icon: "Nord",
+    iconColor: "#4687FF",
     category: "security"
   },
   {
@@ -72,7 +78,8 @@ const PRODUCTS = [
     price: "₩3,000",
     desc: "프리미엄 개인계정 3개월 · 로그인 보증 · 불량 시 구매 후 30일 내 교환",
     tag: "BEST",
-    icon: "🎵",
+    icon: "Spotify",
+    iconColor: "#1DB954",
     category: "music"
   },
   {
@@ -80,7 +87,8 @@ const PRODUCTS = [
     price: "₩4,000",
     desc: "계정 1개월 · 2주 보증 · 개인계정에 적용",
     tag: "BEST",
-    icon: "📺",
+    icon: "YouTube",
+    iconColor: "#FF0000",
     category: "streaming"
   },
   {
@@ -88,7 +96,8 @@ const PRODUCTS = [
     price: "₩40",
     desc: "계정번호/아이디/비밀번호/쿠키 · 로그인 보증 · 구매 후 1일 내 교환",
     tag: "NEW",
-    icon: "🧱",
+    icon: "ROBLOX",
+    iconColor: "#000000",
     category: "gaming"
   },
   {
@@ -96,7 +105,8 @@ const PRODUCTS = [
     price: "₩1,200",
     desc: "계정 아이디/비번 지급 · 로그인 보증 · 구매 후 3일 내 교환",
     tag: "NEW",
-    icon: "🎞️",
+    icon: "CapCut",
+    iconColor: "#000000",
     category: "creative"
   },
   {
@@ -104,7 +114,8 @@ const PRODUCTS = [
     price: "₩100/일 · ₩3,000/30일 · ₩10,000/영구",
     desc: "Windows PC 전용 · GUI 기반 자동 메시지 전송 매크로",
     tag: "TOOL",
-    icon: "💬",
+    icon: "KakaoTalk",
+    iconColor: "#FFE812",
     category: "tools"
   },
   {
@@ -112,7 +123,8 @@ const PRODUCTS = [
     price: "₩4,900",
     desc: "계정 지급 · 로그인 보증 + 프로 적용 보증 · 3일 보증",
     tag: "NEW",
-    icon: "✨",
+    icon: "Gemini",
+    iconColor: "#886FBF",
     category: "ai"
   },
   {
@@ -120,7 +132,8 @@ const PRODUCTS = [
     price: "₩3,900",
     desc: "계정 지급 · 로그인 보증 + Plus 적용 보증 · 구매 후 3일 보증",
     tag: "BEST",
-    icon: "🤖",
+    icon: "GPT",
+    iconColor: "#10A37F",
     category: "ai"
   },
   {
@@ -128,7 +141,8 @@ const PRODUCTS = [
     price: "₩500 ~ ₩700 / 1회",
     desc: "SMS 수신 전용 · 20분 사용 후 만료 · 불량 교환/환불 불가",
     tag: "INFO",
-    icon: "📦",
+    icon: "SMS",
+    iconColor: "#5d6dff",
     category: "utility"
   },
   {
@@ -136,7 +150,8 @@ const PRODUCTS = [
     price: "₩500",
     desc: "계정 지급 · 로그인 보증 · 불량 시 구매 후 1일 내 교환",
     tag: "SAFE",
-    icon: "🔒",
+    icon: "Express",
+    iconColor: "#DA3940",
     category: "security"
   },
 ];
@@ -207,7 +222,7 @@ class ProductManager {
 
     const elements = {
       tag: this.createElement('span', 'tag', product.tag || 'INFO'),
-      icon: this.createElement('div', 'icon', product.icon),
+      icon: this.createBrandIcon(product.icon, product.iconColor),
       title: this.createElement('h3', '', product.name),
       price: this.createElement('div', 'price', product.price),
       desc: this.createElement('p', 'desc', product.desc),
@@ -216,6 +231,16 @@ class ProductManager {
 
     Object.values(elements).forEach(el => card.appendChild(el));
     return card;
+  }
+
+  createBrandIcon(iconText, iconColor) {
+    const icon = document.createElement('div');
+    icon.className = 'brand-icon';
+    icon.textContent = iconText;
+    if (iconColor) {
+      icon.style.setProperty('--brand-color', iconColor);
+    }
+    return icon;
   }
 
   createElement(tag, className, textContent) {
