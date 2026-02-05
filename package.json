@@ -1,0 +1,41 @@
+{
+  "name": "nexi-shop",
+  "version": "2.0.0",
+  "description": "Premium Discord Community Platform - Nexi SHOP Official Website",
+  "author": "Nexi SHOP Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/taeyoon0526/nexiott.shop"
+  },
+  "keywords": [
+    "discord",
+    "community",
+    "premium",
+    "shop",
+    "nexi"
+  ],
+  "scripts": {
+    "dev": "python3 -m http.server 8000",
+    "format": "prettier --write \"**/*.{html,css,js,json,md}\"",
+    "lint:css": "stylelint \"**/*.css\"",
+    "lint:js": "eslint \"**/*.js\""
+  },
+  "devDependencies": {
+    "prettier": "^3.0.0",
+    "stylelint": "^15.0.0",
+    "eslint": "^8.0.0"
+  },
+  "prettier": {
+    "semi": true,
+    "singleQuote": false,
+    "tabWidth": 2,
+    "trailingComma": "es5",
+    "printWidth": 100
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
