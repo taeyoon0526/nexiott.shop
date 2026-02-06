@@ -947,6 +947,11 @@ a {
   font-weight: 700;
 }
 
+.terms-card .nested-list {
+  margin-left: 20px;
+  margin-top: 8px;
+}
+
 .terms-strong {
   margin: 0;
   font-weight: 800;
